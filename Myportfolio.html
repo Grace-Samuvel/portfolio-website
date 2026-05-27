@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- NAVBAR: responsive with hamburger menu -->
+    <header class="nav-wrap">
+        <div class="container nav-container">
+            <a class="logo" href="#">MyPortfolio</a>
+            <nav id="nav" class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Resume button -->
+            <a class="btn resume-btn" href="#" aria-label="Download Resume">Resume</a>
+            <!-- Hamburger for mobile -->
+            <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO: main intro section -->
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1 class="glow">Hi, I'm <font color="pink">Grace.S</font></h1>
+                <p class="lead">A Fresher Frontend Developer building modern, accessible and responsive web experiences.</p>
+                <div class="hero-cta">
+                    <a class="btn primary" href="#projects">See Projects</a>
+                    <a class="btn ghost" href="#contact">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-card">
+
+                <!-- Simple profile image -->
+                <div class="avatar"><img src="./my pics/pic.jpeg" alt="My Photo"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT: short bio -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p class="muted">Passionate about turning designs into clean, accessible code. I enjoy learning modern CSS, JavaScript and building small projects to sharpen my skills.</p>
+            <div class="about-grid">
+                <div class="about-item">
+                    <h3>Education</h3>
+                    <table border="1px" cellpadding="10px" cellspacing="0">
+                        <tr>
+                            <th>SSLC</th>
+                            <td>Immaculate Girls Higher Secondary School - 90% - [2015]</td>
+                        </tr>
+
+                        <tr>
+                            <th>HSC</th>
+                            <td>
+                                Immaculate Girls Higher Secondary School - 75% - [2017]
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Degree</th>
+                            <td>BSC Computer Science - 77% - [2020]</td>
+                        </tr>
+
+                </table> <BR> </BR>
+                <h3>Course & Certifications</h3>
+                <h4>Jspiders Institution</h4> <br>
+                <p><b>FUll stack Development course - [JAN 2025 to MAR 2026]</b></p> 
+                <p>Certificate : WEB TECHNOLOGIES, SQL, CORE JAVA, J2EE, FRAMEWORKS</p>
+
+                </div>
+                <div class="about-item">
+                    <h3>TECHNICAL SKILLS</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                        <li>Responsive Web Design</li>
+                        <li>Flexbox & CSS Grid</li>
+                        <li>DOM Manipulation</li>
+                        <li>Event Handling</li>
+                        <li>GitHub Basics</li>
+                        <li>Visual Studio Code</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS: use progress bars -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <!-- Each skill has a label and animated bar -->
+                <div class="skill">
+                    <span>HTML</span>
+                    <div class="bar"><div class="fill" data-fill="95"></div></div>
+                </div>
+                <div class="skill">
+                    <span>CSS</span>
+                    <div class="bar"><div class="fill" data-fill="90"></div></div>
+                </div>
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="bar"><div class="fill" data-fill="85"></div></div>
+                </div>
+                <div class="skill">
+                    <span>Responsive Design</span>
+                    <div class="bar"><div class="fill" data-fill="92"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS: showcase three projects -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <p class="muted">Small projects demonstrating fundamentals — accessible, responsive and interview-ready.</p>
+            <div class="projects-grid">
+                <!-- Project 1: Todo App -->
+                <article class="project-card">
+                    
+                    <h3>Todo App</h3>
+                    <p>Simple todo list with add, complete, and delete features using vanilla JS.</p>
+                    <div class="project-links">
+                        <a href="todoapp2.html" class="link">View</a>
+                        <a href="#" class="link">Code</a>
+                    </div>
+                </article>
+                <!-- Project 2: Calculator -->
+                <article class="project-card">
+                    
+                    <h3>Calculator App</h3>
+                    <p>A responsive calculator with a clean UI and keyboard support.</p>
+                    <div class="project-links">
+                        <a href="calc.html" class="link">View</a>
+                        <a href="#" class="link">Code</a>
+                    </div>
+                </article>
+                <!-- Project 3: Portfolio -->
+                <article class="project-card">
+                    
+                    <h3>Portfolio Website</h3>
+                    <p>This portfolio — responsive, accessible and animated with smooth scroll.</p>
+                    <div class="project-links">
+                        <a href="index.html" class="link">View</a>
+                        <a href="#" class="link">Code</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT: simple contact form (no backend) -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact <font color="pink">Me</font></h2>
+            
+    <p class="contact-subtitle">
+        Feel free to connect with me
+    </p>
+
+    <div class="contact-container">
+
+        <!-- Email -->
+        <div class="contact-card">
+            <i class="fa-solid fa-envelope"></i>
+
+            <div class="contact-info">
+                <h3>Email</h3>
+                <p>grace.jerry2019@gmail.com</p>
+            </div>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="contact-card">
+            <i class="fa-brands fa-linkedin"></i>
+
+            <div class="contact-info">
+                <h3>LinkedIn</h3>
+                <p>linkedin.com/in/Grace-S</p>
+            </div>
+        </div>
+
+        <!-- GitHub -->
+        <div class="contact-card">
+            <i class="fa-brands fa-github"></i>
+
+            <div class="contact-info">
+                <h3>GitHub</h3>
+                <p>github.com/Grace-Samuvel</p>
+            </div>
+        </div>
+
+        <!-- WhatsApp -->
+        <div class="contact-card">
+            <i class="fa-brands fa-whatsapp"></i>
+
+            <div class="contact-info">
+                <h3>WhatsApp</h3>
+                <p>+91 7695899616</p>
+            </div>
+        </div>
+
+    </div>
+
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <p>© <span id="year"></span> Grace S — Built with HTML, CSS & JavaScript</p>
+            <div class="social">
+                <a href="https://linkedin.com/in/Grace-S" target="_blank">
+   LinkedIn
+</a>
+<a href="https://github.com/Grace-Samuvel" target="_blank">
+ GitHub
+</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to JS (paste into script.js) -->
+    <script src="script.js"></script>
+</body>
+</html>
